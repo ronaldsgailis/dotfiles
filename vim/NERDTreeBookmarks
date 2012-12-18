@@ -1,0 +1,7 @@
+application /Library/WebServer/Documents/groupon/system/application
+config /Library/WebServer/Documents/groupon/system/application/config
+controllers /Library/WebServer/Documents/groupon/system/application/controllers
+fitster.pro /Library/WebServer/Documents/fitster.pro
+gail.is /Library/WebServer/Documents/gail.is
+views /Library/WebServer/Documents/groupon/system/application/views
+

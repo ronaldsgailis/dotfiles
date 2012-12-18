@@ -1,0 +1,6 @@
+application /Library/WebServer/Documents/groupon/system/application
+config /Library/WebServer/Documents/groupon/system/application/config
+controllers /Library/WebServer/Documents/groupon/system/application/controllers
+gail.is /Library/WebServer/Documents/gail.is
+views /Library/WebServer/Documents/groupon/system/application/views
+
