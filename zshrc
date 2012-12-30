@@ -35,4 +35,4 @@ plugins=(git osx svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/hb/.rvm/gems/ruby-1.9.2-p180/bin:/Users/hb/.rvm/gems/ruby-1.9.2-p180@global/bin:/Users/hb/.rvm/rubies/ruby-1.9.2-p180/bin:/Users/hb/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
