@@ -12,7 +12,7 @@ These are my dotfiles, nothing too fancy.
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 	
 ##Clone dotfiles
-	git clone git://github.com/ronalds/dotfiles.git ~/.dotfiles
+	git clone git://github.com/ronaldsgailis/dotfiles.git ~/.dotfiles
 	cd ~/.dotfiles && rake install
 	
 ##Setup MAC defaults
