@@ -5,8 +5,9 @@ desc "install the dot files into user's home directory"
 task :install do
   install_oh_my_zsh
   switch_to_zsh
+  install_scripts
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh]
+  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh scripts]
   files << "oh-my-zsh/custom/aliases.zsh"
   files << "oh-my-zsh/custom/ronalds.zsh-theme"
   files.each do |file|
@@ -87,5 +88,11 @@ def install_oh_my_zsh
     else
       puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
     end
+  end
+end
+def install_scripts
+  files = Dir['scripts/*.sh']
+  files.each do |file|
+    system %Q{ln -s ~/.dotfiles/scripts/#{File.basename(file)} /usr/local/bin/#{File.basename(file, ".sh")}}
   end
 end
