@@ -32,6 +32,9 @@ source $HOME/.functions
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
+# add scripts to the path
+[[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
+
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 rvm use default
