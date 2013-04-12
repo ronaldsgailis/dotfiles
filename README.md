@@ -1,5 +1,10 @@
 
-These are my dotfiles, nothing too fancy. 
+These are my dotfiles, nothing too fancy.
+##Install git and curl
+Make sure you have git and curl, if not, then on Ubuntu or Debian run:
+	
+	apt-get install git git-core curl
+	
 ##Install RVM
     bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
     source ~/.rvm/scripts/rvm
