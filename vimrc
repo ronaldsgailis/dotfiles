@@ -41,7 +41,7 @@ set noswapfile                  " do not write annoying intermediate swap files,
 if has("gui_running")
   " GUI is running or is about to start.
   set lines=999 columns=999     " Maximize gvim window.
-  set guifont=Monlo:h12         " increase font size for gui
+  set guifont=Menlo:h14         " increase font size for gui
 else
   " This is console Vim.
   if exists("+lines")
