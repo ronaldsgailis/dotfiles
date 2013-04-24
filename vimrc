@@ -17,8 +17,6 @@ set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
-set nobackup
-set noswapfile
 set guioptions=ac
 set vb
 set ch=2
@@ -39,7 +37,20 @@ if v:version >= 730
 endif
 set nobackup                    " do not keep backup files, it's 70's style cluttering
 set noswapfile                  " do not write annoying intermediate swap files,
-set lines=50 columns=150        " restore from swap files anyway?
+"set lines=50 columns=150        " restore from swap files anyway?
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+endif
 " Highlighting {{{
 if &t_Co >= 256 || has("gui_running")
    colorscheme molokai
@@ -62,7 +73,7 @@ let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 
 " Quit on opening files from the tree
-let NERDTreeQuitOnOpen=0
+"let NERDTreeQuitOnOpen=0
 
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1
@@ -83,14 +94,10 @@ if has("autocmd")
 endif
 
 noremap  <Up> ""
- noremap! <Up> <Esc>
- noremap  <Down> ""
- noremap! <Down> <Esc>
- noremap  <Left> ""
- noremap! <Left> <Esc>
- noremap  <Right> ""
- noremap! <Right> <Esc>
-
-
-
-
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
