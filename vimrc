@@ -40,8 +40,8 @@ set noswapfile                  " do not write annoying intermediate swap files,
 "set lines=50 columns=150        " restore from swap files anyway?
 if has("gui_running")
   " GUI is running or is about to start.
-  " Maximize gvim window.
-  set lines=999 columns=999
+  set lines=999 columns=999     " Maximize gvim window.
+  set guifont=Monlo:h12         " increase font size for gui
 else
   " This is console Vim.
   if exists("+lines")
