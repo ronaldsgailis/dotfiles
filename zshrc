@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.functions
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # add scripts to the path
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
