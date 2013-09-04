@@ -32,6 +32,16 @@
 	f = "!git ls-files | grep -i"
 	grep = grep -Ii
 	gr = grep -Ii
+	st = status
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        m = checkout master
+        amend = commit --amend
+        ammend = amend
+        #display defined aliases
+        aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
