@@ -41,7 +41,7 @@
         amend = commit --amend
         ammend = amend
         #display defined aliases
-        aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+        aliases = !git config --get-regexp 'alias.*' | sed 's/^alias\.//' | sed 's/[ ]/ = /'
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
