@@ -1,4 +1,3 @@
-
 These are my dotfiles, nothing too fancy.
 ##Install git and curl
 Make sure you have git and curl, if not, then on Ubuntu or Debian run:
@@ -15,6 +14,9 @@ Make sure you have git and curl, if not, then on Ubuntu or Debian run:
 	
 ##Install oh-my-zsh
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+	
+##Change shell to zsh
+        chsh -s /bin/zsh
 	
 ##Clone dotfiles
 	git clone git://github.com/ronaldsgailis/dotfiles.git ~/.dotfiles
