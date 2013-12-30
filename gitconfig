@@ -22,7 +22,7 @@
 	changed = green
 	untracked = cyan
 [mergetool]
-	keepBackup = true
+	keepBackup = false
 [core]
 	autocrlf = input
 	editor = /usr/bin/vim
@@ -48,3 +48,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[push]
+	default = matching
