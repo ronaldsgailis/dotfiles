@@ -24,7 +24,7 @@ ZSH_THEME="ronalds"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx svn rvm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.functions
@@ -34,7 +34,3 @@ export PATH=/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # add scripts to the path
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
-
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-rvm use default
