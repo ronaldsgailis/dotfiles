@@ -111,6 +111,12 @@ function extract() {
 	fi
 }
 
+# kill all docker containers
+function docker-kill-all()
+{
+	docker kill $(docker ps -q)
+}
+
 # create upstart conf file for node project
 # usage: create_upstart "project_name" "file_to_start"
 create_upstart() {
