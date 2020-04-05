@@ -153,3 +153,8 @@ EOF
   start ${project}_${file}
   echo Restarted ${project}_${file}
 }
+
+function containerip()
+{
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@" 
+}
