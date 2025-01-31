@@ -8,6 +8,16 @@ Make sure you have git, curl and vim, if not, then on Ubuntu or Debian run:
 	
 ## Change shell to zsh
 `chsh -s /bin/zsh`
+
+## Install Homebrew
+`/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+## Install Homebrew packages
+`brew install bat` - code higlight
+
+`brew install silicon` - code screenshots
+
+`brew install typos-cli` - source code spelling checker
 	
 ## Clone dotfiles
 ```
