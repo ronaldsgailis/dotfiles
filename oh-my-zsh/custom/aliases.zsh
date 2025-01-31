@@ -1,4 +1,4 @@
-alias la='ls -lAh'
+alias la='lsd -lAh'
 
 extract () {
     if [ -f $1 ] ; then
@@ -21,3 +21,6 @@ extract () {
      fi
 }
 
+alias docker-compose="docker compose "
+
+alias silicon-clipboard='silicon --from-clipboard -l rs --to-clipboard'

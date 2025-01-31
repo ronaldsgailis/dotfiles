@@ -24,13 +24,22 @@ ZSH_THEME="ronalds"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git zsh-lsd)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.functions
 
 # Customize to your needs...
-export PATH=/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=~/.composer/vendor/bin:~/.npm-global/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/make/libexec/gnubin:/usr/local/git/bin::/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export COLIMA_VM="default"
+export COLIMA_VM_SOCKET="${HOME}/.colima/${COLIMA_VM}/docker.sock"
+export DOCKER_HOST="unix://${COLIMA_VM_SOCKET}"
 
 # add scripts to the path
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+source <(docker completion zsh)
+#eval "$(symfony-autocomplete)"

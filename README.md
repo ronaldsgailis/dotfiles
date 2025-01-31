@@ -17,3 +17,7 @@ cd ~/.dotfiles && rake install
 	
 ## Setup MAC defaults
 `./osx`
+
+
+## Install symfony autocomplete
+`composer global require bamarni/symfony-console-autocomplete`
