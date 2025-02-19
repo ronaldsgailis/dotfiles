@@ -26,7 +26,7 @@
 [core]
 	autocrlf = input
 	editor = /usr/bin/vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/ronaldsgailis/.gitignore_global
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	f = "!git ls-files | grep -i"
@@ -49,4 +49,4 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [push]
-	default = matching
+	default = current
