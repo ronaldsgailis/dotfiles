@@ -13,6 +13,12 @@ Make sure you have git, curl and vim, if not, then on Ubuntu or Debian run:
 `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ## Install Homebrew packages
+`brew install lsd` - LSDeluxe
+
+`brew install font-hack-nerd-font`
+
+iTerm2 > Preferences > Profiles > Text > Non-ASCII-Font > Change Font
+
 `brew install bat` - code higlight
 
 `brew install silicon` - code screenshots
